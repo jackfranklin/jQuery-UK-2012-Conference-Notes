@@ -174,6 +174,61 @@ whatever you do, catch them all!
 - stable product
 
 
+---
+
+#QUnit
+##Laurent Delcambre
+@tquila_laurent
+
+###Why use Unit tests
+- check business logic validity
+- repeating tests easily
+- detecting regressions
+- ease cross browser testing
+- siwtching from bottom-up to top-down
+- business logic in the front end
+- TDD is awesome
+
+###Steps to use QUnit
+
+####Set up HTML structure to display results
+
+```css
+#qunit-header /* name of test suite */
+#qunit-banner /* show up red / green if test fail / pass */
+#qunit-userAgent /* show uA */
+#quinit-tests /*container for test results */
+```
+
+####Asserting Results
+```js
+ok(boolean [,message]);
+test("ok test, function() {
+  ok(true, "ok succeeds");
+  ok(false, "ok fails");
+});
+```
+
+```js
+equals(actual, expected [,message]);
+```
+
+
+`same` is the better version of `equals`, it uses `===` and compares content of objects
+```js
+same(actual, expected [,message]);
+```
+
+####Testing Asynchronous Callbacks
+problem: don't wait for the result of the asynchronous operations
+solution: call `stop()` before any asynchronous operation, call `start()` after all assertions are done, which means test runner can continue
+
+###Perspectives
+BDD: Behaviour Driven Development
+- Jasmine
+- Screw.unit
+- JSpec
+
 
 
 
