@@ -1,8 +1,14 @@
-#jQuery Conf UK notes
+#jQuery Conf UK notes.
 ##10th Feb 2012
-###Jack Franklin
+_hashtag #jquk, twitter @jquk_
 
-Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a proper geek should.
+###Jack Franklin
+@Jack_Franklin
+
+
+Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a proper geek should, live blogged by commiting & pushing changes to Github. Fuck yeah developers.
+
+If you've got any extra things I missed, feel free to fork, add & pull request.
 
 
 #General Things that have popped up that I want to check out
@@ -228,6 +234,87 @@ BDD: Behaviour Driven Development
 - Jasmine
 - Screw.unit
 - JSpec
+
+check out phantom.js for command line testing
+
+
+---
+
+#Christian Heilmann
+##Embracing & Celebrating Redundancy
+@codepo8
+Slides: http://icant.co.uk/talks/jquk/
+
+###Bad browsers gave us a few options
+- cater to the lowest common denominator?
+- block out old browsers?
+- abstract browser differences into a library?
+
+###jQuery chose the third option
+- created an API to work around browser differences
+- introduced chaining
+- replace the DOM
+- access everything with CSS selectors (Sizzle)
+
+###jQuery simulates the browser we wanted
+- specialised for content maniplation
+- easy interface effects and animations
+- easier event handling
+- Ajax without the X 
+
+###Abstraction != Obstruction (going over the top)
+we keep abstracting on abstractions and this is __BAD__ (lots of things do this)
+
+###Imagine...
+- if browsers didn't suck anymore
+- and what if that has actually happened?
+- jQuery won, it showed a better way
+- and now it's time to reap the rewards, __change to the native web tech__
+- we should give Microsoft a chance again
+
+There's a backlash! `"\\".replace('s','')`
+
+Remember that events _bubble up (since IE5!)_, so delegate!
+
+Stop changing CSS with jQuery, leaves a __tight bond between struct & behav__. It's presentation on the behaviour layer.
+
+`document.querySelector` is `$`
+
+Don't do an `onclick` handler on a form - use the `submit` event so it works with keyboards 
+
+`preventDefault` exists in native JS
+
+Assign event listeners to parent and check if the element you're interacting with is what you want:
+```js
+someVar.addEventListener('click', function(e) {
+  var t = e.target;
+  if(t.tagName === "LI") { ... }
+});
+```
+
+(Example of todo list & all the corresponding code is in the slides (linked to above))
+
+###Techniques to write less
+- delegate, don't loop
+- add classes to CSS
+- fancy stuff in CSS, not JS
+
+Start sites with sensible HTML structures. Think about it!
+
+###Trickery for Small Code
+- semantic HTML
+- animations & transitions with CSS - smooth! (hardware accelerated)
+- reusing variables (using a URL hash as ID, etc)
+
+###Christian's Wishes 
+- use what browsers natively give you
+- plan and architect solutions, don't pile effect on effect
+- structure your code in cached elements and reusable functions
+- __don't answer any JS questions with use jQuery__
+- don't write plugins for edge cases (this is nearly PHP land)
+- use what browsers have and give browsers feedback. Fix source, don't abstract.
+
+---
 
 
 
