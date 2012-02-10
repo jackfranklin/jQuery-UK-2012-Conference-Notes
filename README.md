@@ -151,7 +151,8 @@ server side rendering: node.js
 - TypeError
 - Ajax
 
-to catch errors you can bind to the window's `error` event 
+to catch errors you can bind to the window's `error` event
+ 
 
 ```
 window.onerror = function(message, file, line) {}
