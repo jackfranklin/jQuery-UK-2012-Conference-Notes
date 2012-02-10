@@ -123,15 +123,18 @@ Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.
 - use HTML5 __history API__ (no support in IE < 10 - surprised?, Opera < 11.5, Safari < 5 ), need to use fallbacks
 
 ####HTML history API
-  history.pushState()
-  history.replaceState()
-  document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around`
+
+    history.pushState()
+    history.replaceState()
+    document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around`
 
 ####HTML history libraries
 - history.js
 - Backbone.history.start()
 - simple-history.js
 
+all code on Github (will find repo shortly)
 
-all examples from talk are on Github
+
+
 ---
