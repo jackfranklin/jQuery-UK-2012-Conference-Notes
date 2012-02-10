@@ -92,8 +92,8 @@ Stay in the loop:
 @dalmaer & @bgalbs
 
 Microsoft said at IE9:
->"With HTML5, you can make __as rich an experience as an app__"
->"HTML5 is a __beautiful thing__. You get lost in the experience and forget that you are on the web"
+> "With HTML5, you can make __as rich an experience as an app__"
+> "HTML5 is a __beautiful thing__. You get lost in the experience and forget that you are on the web"
 
 People using mobile apps more and more (and in some cases even more than websites on a day to day basis)
 
@@ -316,7 +316,22 @@ Start sites with sensible HTML structures. Think about it!
 
 ---
 
+#Haymo Meran
+##Aloha Editor
+@draftkraft
+http://aloha-editor.org/
 
+> Aloha Editor makes contnet in your browser editable
+
+`$(#editable).aloha()`
+
+Edit the web - like MS Word 
+
+WYSIWYGs are supposed to show __SIMILAR__
+
+Uses `contenteditable` (HTML attribute)
+
+Issues with it as the standard wasn't defined, each browser does it differently. So Aloha was made to solve these issues and make a cross browser editor.
 
 
 
