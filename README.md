@@ -49,10 +49,30 @@ big API for developers
 - AMD
 - download builder
 - taking a step back & fix bugs
+
+###1.2 stuff
 - exposing things (like popups) that are used internally but not available via API
 - Fetchlinks (coming in 1.2), taking navigation model & exposing it.
+- overflow regions
+- responsive layouts
+
+###Resources
+http://codiqa.com/for prototyping
+
+jQM works with Backbone & sorts
+
+Lots of books available
+
+All collected at jquerymobile.com/resources
+
 
 Use jquerymobile.com/test to play
+
+Can always use more help so get in touch
+
+Stay in the loop:
+- jquerymobile.com/blog
+- @jquerymobile
 
 ---
 
