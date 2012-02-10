@@ -6,8 +6,8 @@ Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a prope
 
 
 #General Things that have popped up that I want to check out
-kendoUI
-backbone.js, ember.js
+- kendoUI
+- backbone.js, ember.js
 
 ---
 
@@ -99,4 +99,36 @@ Continuous delpoyment much easier on web than via an App Store
 
 Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.github.com/thorax/
 
+---
 
+#Pitfalls and opportunities of single page applications
+##Jorn Zaefferer
+@bassistance
+
+(does QUnit - need to check that out)
+
+###Building single page apps
+- static files & JSON API
+- no page reloads
+- Backbone.js, ember, whatever
+- simple applications architecture
+- better user experience
+- super frameworks to help out
+
+###Pitfalls & potential solutions
+
+###Better user experience?
+####urls not changing on link clicks
+- urls don't change when page changes - can't bookmark, link, etc, or opening in new window doesn't work
+- use HTML5 __history API__ (no support in IE < 10 - surprised?, Opera < 11.5, Safari <5), need to use fallbacks
+####HTML history API
+  history.pushState()
+  history.replaceState()
+  document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around
+
+####HTML history libraries
+- history.js
+- Backbone.history.start()
+- simple-history.js
+
+---
