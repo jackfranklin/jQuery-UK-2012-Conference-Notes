@@ -505,13 +505,106 @@ _code in slides_
 - permissions manager, securing what modules can/can't access
 
 ####Modules
+
 - unique (__independent__) blocks
 - initialize & destroy functions
 - initialize can subscribe to notifications
 
 github repo for the demo: https://github.com/addyosmani/largescale-demo
 
+---
 
+#Contextual jQuery
+##Doug Neiner
+@dougneiner
+
+Approaches to jQuery:
+
+###Declarative
+
+- repeated code
+- heavy use of IDs
+- changes to HTML require changes to JS (vice-versa)
+- lots going on document ready
+
+###Dynamic
+
+- heavy use of classes, simple selectors
+- delegated events sometimes
+- less repeated code
+- changes to HTML requires changes to jQuery
+- lots on document ready
+
+###Contextual
+
+- minimal use of IDs, some classes
+- leverages selectors & traversing
+- very little repeated code
+- HTML follows convention so edits require less changes to JS
+- virtually nothing on document ready
+
+###Benefits of Contextual jQuery
+
+- flexible & more responsible code
+- focussed
+- less code overall
+- easier to maintain & reuse
+
+###Implementation
+
+####Minimise Setup
+
+- use `no-js` / `js` class on body
+- use CSS to control state
+- use modernizr!
+- do what modernizr does for your own thing. Add CSS classes like `signed-in`, etc. Show / Hide / Traverse gets moved out of JS and into CSS
+
+#####Just in Time Initialization
+
+- set up areas of your page only when needed
+- leverage user actions or probable actions as indiciation of what to initialise
+- click, mouseenter, mouseleave, scrolling, focusin/focusout
+
+
+####Delegated Events
+
+- can be setup as soon as the context element is ready (when `document` is ready, so pretty much all the time, don't need to use `$(document).ready()`
+
+
+####Traversal, Filters & Selectors
+
+- brittle vs flexible traversal
+- eg use `closest` rather than `parent` 
+- not always needed to write the fastest code possible, often more maintainable code is better
+
+
+####HTML Conventions
+
+Conventions are patterns
+
+- you can build them yourself
+- need to be consisten
+- a promise you make
+- change between projects
+- __have__ to work for you
+
+Keep your markup clean
+__think before you add markup to solve a JavaScript problem__
+
+Always use `$(this).attr("href")` as jQuery normalises & fixes cross browser
+
+
+
+###Write code like you spend money!
+- opt to pay a little more later so you don't risk losing it all on something that never happens
+
+###Write code like you buy a car!
+- always weigh the difference between cost and quality
+
+###Write code like you ask for directions or building something! 
+- try to get there on your own first!
+
+Slides: www.bit.ly/contextual-uk
 
 ---
 
