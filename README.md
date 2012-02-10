@@ -92,6 +92,7 @@ Stay in the loop:
 @dalmaer & @bgalbs
 
 Microsoft said at IE9:
+
 > "With HTML5, you can make __as rich an experience as an app__"
 > "HTML5 is a __beautiful thing__. You get lost in the experience and forget that you are on the web"
 
