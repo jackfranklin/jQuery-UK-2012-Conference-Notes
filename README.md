@@ -4,13 +4,18 @@
 
 Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a proper geek should.
 
+
+#General Things that have popped up that I want to check out
+kendoUI
+backbone.js, ember.js
+
 ---
 
 #Todd Parker - jQuery Mobile
 @toddmparker
 http://jquerymobile.com/
 https://github.com/jquery/jquery-mobile
-##Filament Group
+Filament Group
 
 contains UI tools & Ajax page transitions
 1 codebase for all platforms
@@ -75,5 +80,23 @@ Stay in the loop:
 - @jquerymobile
 
 ---
+
+#Web vs Apps
+##Dion Almaer and Ben Galbraith
+@dalmaer & @bgalbs
+
+Microsoft said at IE9:
+>"With HTML5, you can make __as rich an experience as an app__"
+>"HTML5 is a __beautiful thing__. You get lost in the experience and forget that you are on the web"
+
+People using mobile apps more and more (and in some cases even more than websites on a day to day basis)
+
+Now days it's very easy to install new software compared to in the past
+
+Native & Platform both have big advantages.
+
+Continuous delpoyment much easier on web than via an App Store
+
+Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.github.com/thorax/
 
 
