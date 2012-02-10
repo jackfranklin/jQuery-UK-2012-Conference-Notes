@@ -344,6 +344,178 @@ jQuery UI captures mouse events (draggables) so sometimes it gets in the way wit
 
 check out http://aloha-wikidocs.com for real time collaboration - looks awesome.
 
+---
+
+#Paul Irish
+##Webapp Development Stack & Tooling
+@paul_irish
+
+- We all want rich web apps, responsive, fast, fun & good experiences
+- Development is focused lots on common tasks rather than being what's unique to the on eproject
+- We want to stop doing common tasks and build fun stuff
+
+Hixie live dom viewer http://software.hixie.ch/utilities/js/live-dom-viewer/
+
+###What is frontend tooling?
+Optional software that assists in development of web apps.
+
+###The Webapp Lifecycle - tooling contexualised
+- boilerplate
+- authoring abstractions
+- frameworks
+- iteration workflow
+- performance tuning
+- build & optimization
+- deploy
+
+####Boilerplate
+- blueprint, html5bp, mobile boilerplate
+
+####Authoring Abstractions
+
+#####CSS
+- sass, less, compass (sits ontop of sass)
+- less = nieve version of sass
+- stylus (another layer on top of sass, looks good)
+
+#####Markup
+- HAML
+- Markdown
+- jade
+- handlebars
+
+#####Scripting
+- coffeescript "think in JS but type less"
+- TameJS
+- dart
+
+
+####Frameworks & The Application Stack
+
+TodoMVC - shows a simple todo app in lots of JS frameworks https://github.com/addyosmani/todomvc http://addyosmani.github.com/todomvc/
+
+__You need tools to support your stack__
+
+####Iteration Workflow
+
+Iteration Automators
+- good old terminal!
+- LiveReload http://livereload.com
+- CodeKit http://incident57.com/codekit
+- auto save JS & CSS changes to Chrome dev tools with plugin (DevTools Autosave 0.2.2 https://github.com/NV/chrome-devtools-autosave)
+
+####Editors & IDES
+
+- lots of options, irrelevant which one you use, just __LEARN IT__
+
+####Browser Dev Tools (Chrome)
+_get chrome canaray for new stuff_
+- can now override user agent in Chrome Dev tools
+- can dock to right of screen
+
+- use closure compiler to minify everything down, this also creates a sourcemap json file
+- prettyprint in dev tools helps but doesn't rename short variables
+- "enable source maps" in Chrome Dev tools uses the sourcemap file closure creates and shows you the original JS. Fuck yeah.
+- can debug on android devices with toolkit on your laptop. Note to self: buy an Android phone!
+
+####JSHint / JSLint
+- hook it up with your editor to give you JS help & feedback
 
 ---
 
+#Large Scale Applications Development with jQuery & JavaScript
+##Addy Osmani
+@addyosmani
+
+###Basic Concepts
+
+####Decoupling
+
+- separates unit of code that don't depend on each other
+- break a large module down into lots of smaller pieces and then you can reuse them.
+- reduce the risk of brekaage when other modules fail
+- use pub/sub
+
+####Pub/Sub
+- logically decouple objects generating events
+- from those reacting to them
+#####Ways of doing them
+- jQuery custom events
+```js
+$(document).trigger('eventName');
+$(document).on('eventName', function() {})
+```
+- Ben Alman's wrapper (on the slides)
+- some more options (on the slides)
+
+
+####Potential Problems
+- if one part of your application breaks, can the app fix this break itself?
+- how much of what we create is easily reusable
+- can our models be tested independently
+- how secure is your application from itself
+Work arounds coming up!
+
+###Patterns
+
+_code in slides_
+
+####Facade Pattern
+- simplifies a module through a simple API that is exposed to the public, with complexity hidden behind
+- hides implementation level details
+
+####Mediator Pattern
+- analogy: air traffic control:
+- tower handles what places can take off or land
+- all communication done from planes to tower
+- centralised controller
+- pub/sub via a centralised mediator, event driven
+- as calls pass through, it can perform validation and much more
+
+###Modules
+- AMD
+- module pattern
+- object literals
+
+###Large Applications
+- difficult to define
+- most of manipulation & display falls to browser
+
+####What are we looking for?
+- loosely coupled architecture
+- smaller independent modules
+- flexibility to change
+
+####Modules
+- notify when something happens
+- don't touch what they don't have to
+- can't stop entire app from working
+
+###Solution: Mix of Everything!
+
+####Application Core
+- manages the module lifecycle, starts, stops, restarts if necessary
+- reacts to actions passed back from a sandbox (facade), handles logic
+- enable adding & removing modules without causing breaks
+- handles error detection and management
+
+####Sandbox
+- abstraction of the core that's an API for common tasks, used by modules
+- interface for ensuring modules don't directly access the core & libraries
+- permissions manager, securing what modules can/can't access
+
+####Modules
+- unique (__independent__) blocks
+- initialize & destroy functions
+- initialize can subscribe to notifications
+
+github repo for the demo: https://github.com/addyosmani/largescale-demo
+
+
+
+---
+
+
+
+
+---
