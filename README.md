@@ -2,7 +2,12 @@
 ##10th Feb 2012
 ###Jack Franklin
 
+Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a proper geek should.
+
+---
+
 #Todd Parker - jQuery Mobile
+http://jquerymobile.com/
 ##Filament Group
 
 contains UI tools & Ajax page transitions
@@ -16,4 +21,24 @@ contains UI tools & Ajax page transitions
    ajaxify links + forms = transitions
    enhance all form elements
    wrap contents in a 'page' container
-5. Uses HTML5 data-attributes
+
+###data-role HTML5 attribute
+- uses classes like "button", etc to define types 
+- `data-role="listview"` adds list styles for you
+
+For accessibility, always add labels but hide them if you don't want them - don't just don't add them!
+
+###page regions
+`data-role="header"` (footer/content/header) _not required, all optional_
+
+###mega api
+big API for developers
+
+###coming soon in jQuery Mobile (1.1 ish)
+- new loader design
+- transition re-vamps
+- 
+
+
+---
+
