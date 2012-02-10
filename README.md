@@ -124,9 +124,9 @@ Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.
 
 ####HTML history API
 
-    history.pushState()
-    history.replaceState()
-    document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around`
+- `history.pushState()`
+- `history.replaceState()`
+- `document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around`
 
 ####HTML history libraries
 - history.js
