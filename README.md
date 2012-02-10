@@ -152,7 +152,6 @@ server side rendering: node.js
 - Ajax
 
 to catch errors you can bind to the window's `error` event
- 
 
 ```
 window.onerror = function(message, file, line) {}
@@ -161,4 +160,28 @@ window.onerror = function(message, file, line) {}
 ```
 $(document).ajaxError(function(event, xhr, options, error) {}
 ```
+
+####Aggregation Options
+- custom
+- analytics tool
+- airbrake, bugsense
+
+whatever you do, catch them all!
+
+###Is it worth the trouble?
+- better UX
+- good first impression
+- stable product
+
+
+
+
+
+
+
+
+
+
+
 ---
+
