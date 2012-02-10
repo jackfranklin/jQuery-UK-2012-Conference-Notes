@@ -68,7 +68,7 @@ big API for developers
 - responsive layouts
 
 ###Resources
-http://codiqa.com/for prototyping
+http://codiqa.com/ for prototyping
 
 jQM works with Backbone & sorts
 
@@ -94,6 +94,7 @@ Stay in the loop:
 Microsoft said at IE9:
 
 > "With HTML5, you can make __as rich an experience as an app__"
+
 > "HTML5 is a __beautiful thing__. You get lost in the experience and forget that you are on the web"
 
 People using mobile apps more and more (and in some cases even more than websites on a day to day basis)
