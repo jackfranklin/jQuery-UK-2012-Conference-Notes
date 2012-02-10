@@ -17,10 +17,15 @@ If you've got any extra things I missed, feel free to fork, add & pull request.
 
 ---
 
-#Todd Parker - jQuery Mobile
+#Todd Parker
+##jQuery Mobile
+
 @toddmparker
+
 http://jquerymobile.com/
+
 https://github.com/jquery/jquery-mobile
+
 Filament Group
 
 contains UI tools & Ajax page transitions
