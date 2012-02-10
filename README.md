@@ -104,8 +104,9 @@ Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.
 #Pitfalls and opportunities of single page applications
 ##Jorn Zaefferer
 @bassistance
+https://github.com/jzaefferer
 
-(does QUnit - need to check that out)
+(does QUnit - need to check that out) https://github.com/jquery/qunit
 
 ###Building single page apps
 - static files & JSON API
@@ -133,8 +134,29 @@ Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.
 - Backbone.history.start()
 - simple-history.js
 
-all code on Github (will find repo shortly)
+###Github repo for code examples: https://github.com/jzaefferer/pitfalls-examples
 
+server side rendering: node.js
 
+###What could go wrong?
+- in space no one can hear you scream
+- in browsers no one can hear your code scream 
 
+###Error handling
+- catch on client & send to server
+- aggregate errors
+
+####Error Types
+- SyntaxError (silly) only likely during testing
+- TypeError
+- Ajax
+
+to catch errors you can bind to the window's `error` event 
+```
+window.onerror = function(message, file, line) {}
+```
+
+```
+$(document).ajaxError(function(event, xhr, options, error) {}
+```
 ---
