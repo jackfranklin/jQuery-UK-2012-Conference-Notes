@@ -120,16 +120,18 @@ Released Thorax, built on Backbone, Underscore, Lumbar, etc: http://walmartlabs.
 ###Better user experience?
 ####urls not changing on link clicks
 - urls don't change when page changes - can't bookmark, link, etc, or opening in new window doesn't work
-- use HTML5 __history API__ (no support in IE < 10 - surprised?, Opera < 11.5, Safari <5), need to use fallbacks
+- use HTML5 __history API__ (no support in IE < 10 - surprised?, Opera < 11.5, Safari < 5 ), need to use fallbacks
 
 ####HTML history API
   history.pushState()
   history.replaceState()
-  document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around
+  document.addEventListener("popstate", callback, false) //not quite consistent - use library to work around`
 
 ####HTML history libraries
 - history.js
 - Backbone.history.start()
 - simple-history.js
 
+
+all examples from talk are on Github
 ---
