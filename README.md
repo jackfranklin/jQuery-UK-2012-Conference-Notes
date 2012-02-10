@@ -334,17 +334,15 @@ http://aloha-editor.org/
 
 Edit the web - like MS Word 
 
-WYSIWYGs are supposed to show __SIMILAR__
+WYSIWYGs are supposed to show __SIMILAR__ but most just suck
 
 Uses `contenteditable` (HTML attribute)
 
 Issues with it as the standard wasn't defined, each browser does it differently. So Aloha was made to solve these issues and make a cross browser editor.
 
+jQuery UI captures mouse events (draggables) so sometimes it gets in the way with Aloha. To solve, add a `handle` to each draggable (or whatever)
 
-
-
-
-
+check out http://aloha-wikidocs.com for real time collaboration - looks awesome.
 
 
 ---
