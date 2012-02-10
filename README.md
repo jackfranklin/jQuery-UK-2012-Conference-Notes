@@ -152,6 +152,7 @@ server side rendering: node.js
 - Ajax
 
 to catch errors you can bind to the window's `error` event 
+
 ```
 window.onerror = function(message, file, line) {}
 ```
