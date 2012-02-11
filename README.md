@@ -79,16 +79,18 @@ jQM works with Backbone & sorts
 
 Lots of books available
 
-All collected at jquerymobile.com/resources
+All collected at http://jquerymobile.com/resources
 
 
-Use jquerymobile.com/test to play
+Use http://jquerymobile.com/test to play
 
 Can always use more help so get in touch
 
 Stay in the loop:
 - jquerymobile.com/blog
 - @jquerymobile
+
+Slides; http://speakerdeck.com/u/toddparker/p/jquery-mobile-keynote-uk-conference
 
 ---
 
@@ -420,6 +422,8 @@ _get chrome canaray for new stuff_
 
 ####JSHint / JSLint
 - hook it up with your editor to give you JS help & feedback
+
+Slides: http://dl.dropbox.com/u/39519/talks/jquk-tooling%2Bappstack/index.html
 
 ---
 
