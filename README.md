@@ -218,7 +218,7 @@ whatever you do, catch them all!
 ####Asserting Results
 ```js
 ok(boolean [,message]);
-test("ok test, function() {
+test("ok test", function() {
   ok(true, "ok succeeds");
   ok(false, "ok fails");
 });
