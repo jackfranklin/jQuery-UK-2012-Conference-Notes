@@ -6,7 +6,7 @@ _hashtag #jquk, twitter @jquk_
 @Jack_Franklin
 
 
-Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a proper geek should, live blogged by commiting & pushing changes to Github. Fuck yeah developers.
+Just my notes from the jQuery UK Conf 2012. On Github, in Markdown, like a proper geek should, live blogged by commiting & pushing changes to Github.
 
 If you've got any extra things I missed, feel free to fork, add & pull request.
 
